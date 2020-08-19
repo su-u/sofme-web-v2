@@ -1,0 +1,226 @@
+$h1_size: 40px;
+$h2_size: 30px;
+$h3_size: 24px;
+
+$calendar_icon_size: 40px;
+
+$breakpoints: (
+    'sm': 'screen and (max-width: 640px)',
+    'md': 'screen and (max-width: 768px)',
+    'lg': 'screen and (max-width: 1000px)',
+    'xl': 'screen and (max-width: 1200px)'
+) !default;
+
+//メディアクエリ用
+@mixin mq($breakpoint: md) {
+    @media #{map-get($breakpoints, $breakpoint)} {
+        @content;
+    }
+}
+
+.calendar-date {
+    margin-top: 50px;
+}
+.author {
+    color: #7e7e7e;
+}
+.probootstrap-card {
+    .probootstrap-card-text {
+        padding: 10px;
+    }
+}
+
+.slides-text {
+    max-width: 800px;
+}
+
+table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    font-size: 22px;
+
+    thead th {
+        color: #2e7d32 !important;
+        padding-bottom: 10px;
+        @include mq(sm) {
+            display: none;
+        }
+    }
+
+    & .date {
+        width: 8%;
+        font-weight: 600;
+        @include mq(sm) {
+            width: auto;
+            margin-top: 40px;
+            padding-left: 10px;
+        }
+    }
+
+    & .color {
+        @include mq(sm) {
+            background-color: #52a747;
+            border-radius: 5px;
+        }
+    }
+    & .title {
+        width: 62%;
+        margin-left: 30px;
+        & a {
+            color: #000000;
+            border-bottom: solid;
+            border-width: 1px;
+
+            &:hover {
+                text-decoration: none;
+            }
+            &:focus {
+                text-decoration: none;
+            }
+        }
+        @include mq(sm) {
+            width: auto;
+        }
+    }
+    & .icon {
+        width: 5%;
+        @include mq(sm) {
+            width: auto;
+        }
+    }
+    & tr td {
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        @include mq(sm) {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+    }
+    tbody {
+        & .icon {
+            width: $calendar_icon_size;
+            height: $calendar_icon_size;
+            margin: auto;
+            border-radius: 10px;
+            @include mq(sm) {
+                width: auto;
+                display: inline;
+                margin-left: 30px;
+            }
+        }
+        & .author {
+            width: 20%;
+            @include mq(sm) {
+                width: auto;
+                display: inline;
+                margin-bottom: 10px;
+            }
+        }
+        tr {
+            @include mq(sm) {
+                margin-bottom: 20px;
+            }
+        }
+
+        tr td {
+            border-top: 1px solid rgba(0, 0, 0, 0.12);
+            margin: 30px 30px;
+            max-width: 640px;
+            word-break: break-all;
+
+            @include mq(sm) {
+                border: none;
+                margin: 5px 10px;
+                display: block;
+            }
+
+            img.icon {
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+//記事
+.item {
+    & h1,
+    & h2,
+    & h3 {
+        font-weight: 700;
+        line-height: 1.5;
+        font-size: $h1_size;
+        padding: 5px 0;
+        margin: 10px 0 30px 0;
+    }
+    & h2,
+    & h3 {
+        border-bottom: 1px solid #dfe2e5;
+    }
+
+    & h2 {
+        font-weight: 600;
+        font-size: $h2_size;
+    }
+    & h3 {
+        font-size: $h3_size;
+    }
+
+    & .half {
+        width: 49%;
+        float: left;
+        @include mq(sm) {
+            width: 100%;
+        }
+    }
+
+    & table {
+        display: block;
+        width: 100%;
+        overflow: auto;
+
+        & th {
+            font-weight: 600;
+        }
+
+        & th,
+        & td {
+            padding: 6px 13px;
+            border: 1px solid #dfe2e5;
+        }
+
+        & tr {
+            background-color: #fff;
+            border-top: 1px solid #c6cbd1;
+        }
+
+        & tr:nth-child(2n) {
+            background-color: #f6f8fa;
+        }
+    }
+
+    & hr {
+        border-top: 3px solid rgb(226, 226, 226);
+    }
+    & p {
+        & a {
+            color: #32ab84;
+        }
+    }
+    a {
+        color: #38a98b;
+    }
+    @include mq(sm) {
+        margin: 0 10px;
+    }
+
+    .img-responsive.frame{
+        display: block;
+        max-width: 100%;
+        height:360px;
+        padding-right: 0;
+        padding-left: 0;
+    }
+}

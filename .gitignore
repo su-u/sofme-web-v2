@@ -1,0 +1,13 @@
+/old/*
+/w/*
+/mediawiki/*
+/project/*
+*.zip
+*.mp3
+/files
+deploy.php
+_archives/*
+.idea/
+node_modules/*
+.cache/*
+public/*
