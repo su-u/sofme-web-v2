@@ -39,13 +39,13 @@ export const Header = () => {
 };
 
 const HeaderContainer = styled.header`
-  padding: 5px;
   background: #0000006b;
   width: 100%;
   
   .container {
     width: 1200px;
     margin: 0 auto;
+    padding: 5px 0;
     
     .logo {
       color: #fff;
