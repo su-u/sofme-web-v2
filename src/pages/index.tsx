@@ -2,6 +2,7 @@ import React from 'react';
 import { Header } from '../components/Header';
 import { BlockMenu } from "../components/Index/BlockMenu";
 import { PageLayout } from "../layouts/PageLayout";
+import { News } from "../components/Index/News";
 
 const Index: React.FC<any> = () => {
 
@@ -10,6 +11,7 @@ const Index: React.FC<any> = () => {
       <Header/>
       <PageLayout>
         <BlockMenu/>
+        <News />
       </PageLayout>
     </>
   )
