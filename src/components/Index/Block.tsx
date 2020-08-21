@@ -27,4 +27,12 @@ const Container = styled.div`
   background: #22eaaa;
   border-radius: 10px;
   
+  .text {
+    .heading {
+      margin-top: 0;
+    }
+    p {
+      margin: 0;
+    }
+  }
 `;

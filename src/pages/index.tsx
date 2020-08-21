@@ -1,13 +1,16 @@
 import React from 'react';
 import { Header } from '../components/Header';
 import { BlockMenu } from "../components/Index/BlockMenu";
+import { PageLayout } from "../layouts/PageLayout";
 
 const Index: React.FC<any> = () => {
 
   return (
     <>
-      <Header />
-      <BlockMenu />
+      <Header/>
+      <PageLayout>
+        <BlockMenu/>
+      </PageLayout>
     </>
   )
   // return (
