@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
+import { Link } from 'gatsby';
 
 export const Header = () => {
   return (
@@ -7,26 +8,26 @@ export const Header = () => {
       <div className="container">
         <div>
           {/*<a href="/index.html"><img className="header-icon" src="/img/sofme_icon.svg"/></a>*/}
-          <a href="/index.html" className="logo">ソフトメディア研究会</a>
+          <Link to="/" className="logo">ソフトメディア研究会</Link>
         </div>
         {/*<a href="#" className="probootstrap-burger-menu visible-xs"> <i></i> </a>*/}
         {/*<div className="mobile-menu-overlay"></div>*/}
         <nav role="navigation" className="main-nav">
           <ul>
             <li>
-              <a href="/index.html" title="ホーム">ホーム</a>
+              <Link to="/" title="ホーム">ホーム</Link>
             </li>
             <li>
-              <a href="/join.html" title="新入生ページ">新入生ページ</a>
+              <Link to="/introduction/" title="新入生ページ">新入生ページ</Link>
             </li>
             <li>
-              <a href="/program/index.html" title="プログラム班のページ">プログラム班</a>
+              <Link to="/program/" title="プログラム班のページ">プログラム班</Link>
             </li>
             <li>
-              <a href="/multi/index.html" title="マルチメディア班のページ">マルチ班</a>
+              <Link to="/multi/" title="マルチメディア班のページ">マルチ班</Link>
             </li>
             <li>
-              <a href="/dtm/index.html" title="DTM班のページ">DTM班</a>
+              <Link to="/dtm/" title="DTM班のページ">DTM班</Link>
             </li>
           </ul>
           {/*<div className="extra-text visible-xs">*/}
