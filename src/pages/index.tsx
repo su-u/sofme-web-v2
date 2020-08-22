@@ -9,7 +9,6 @@ const Index: React.FC<any> = () => {
 
   return (
     <>
-      <Header/>
       <PageLayout>
         <BlockMenu />
         <News />

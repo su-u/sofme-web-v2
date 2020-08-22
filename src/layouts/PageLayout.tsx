@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
+import { Header } from "../components/Header";
 
 interface IProps {
   children: React.ReactNode;
@@ -7,9 +8,12 @@ interface IProps {
 
 export const PageLayout: React.FC<IProps> = ({children}) => {
   return (
-    <Container>
-      {children}
-    </Container>
+    <>
+      <Header />
+      <Container>
+        {children}
+      </Container>
+    </>
   )
 };
 

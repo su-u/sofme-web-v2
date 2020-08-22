@@ -11,3 +11,4 @@ _archives/*
 node_modules/*
 .cache/*
 public/*
+yarn-error.log
