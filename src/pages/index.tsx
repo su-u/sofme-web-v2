@@ -1,5 +1,4 @@
 import React from 'react';
-import { Header } from '../components/Header';
 import { BlockMenu } from "../components/Index/BlockMenu";
 import { PageLayout } from "../layouts/PageLayout";
 import { News } from "../components/Index/News";

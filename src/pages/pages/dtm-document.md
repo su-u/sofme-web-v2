@@ -6,3 +6,5 @@ path: "/posts/perfecting-the-art-of-perfection/"
 group: all
 type: page
 ---
+
+## テスト新入生ページ

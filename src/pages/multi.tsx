@@ -1,22 +1,32 @@
 import React from 'react';
-import { Header } from '../components/Header';
-import { BlockMenu } from "../components/Index/BlockMenu";
+import { graphql } from 'gatsby'
 import { PageLayout } from "../layouts/PageLayout";
-import { News } from "../components/Index/News";
-import { About } from "../components/Index/About";
+import { PageContent } from "../components/PageContent";
 
-const Index: React.FC<any> = () => {
-
+const Index: React.FC<any> = ({data}) => {
+  const { html } = data.introductionData.edges[0].node;
   return (
     <>
-      <Header/>
       <PageLayout>
-        <BlockMenu />
-        <News />
-        <About />
+        <PageContent html={html} />
       </PageLayout>
     </>
   )
 };
 
 export default Index;
+
+export const pageQuery = graphql`
+    query {
+        introductionData: allMarkdownRemark(filter: {frontmatter: {title: {eq: "マルチ班紹介ページ"}}}) {
+            edges {
+                node {
+                    frontmatter {
+                        title
+                    }
+                    html
+                }
+            }
+        }
+    }
+`

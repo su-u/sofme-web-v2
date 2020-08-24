@@ -15,6 +15,5 @@ const H3 = styled.h3`
   border-bottom: 1px solid #000;
   border-left: 10px solid #000;
   padding: 10px;
-  clear: both;
   margin-top: 0;
 `;

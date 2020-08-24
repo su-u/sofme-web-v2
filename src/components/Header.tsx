@@ -52,7 +52,6 @@ const HeaderContainer = styled.header`
       color: #fff;
       padding-left: 0;
       font-size: 30px;
-      display: block;
       font-weight: 100;
       text-decoration: none;
     }

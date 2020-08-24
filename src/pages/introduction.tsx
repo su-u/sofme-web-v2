@@ -17,7 +17,7 @@ const Index: React.FC<any> = ({data}) => {
 export default Index;
 
 export const pageQuery = graphql`
-    query IndexQuery {
+    query {
         introductionData: allMarkdownRemark(filter: {frontmatter: {title: {eq: "新入生向けページ"}}}) {
             edges {
                 node {
