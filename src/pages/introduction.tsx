@@ -1,10 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby'
-import { Header } from '../components/Header';
-import { BlockMenu } from "../components/Index/BlockMenu";
 import { PageLayout } from "../layouts/PageLayout";
-import { News } from "../components/Index/News";
-import { About } from "../components/Index/About";
 import { PageContent } from "../components/PageContent";
 
 const Index: React.FC<any> = ({data}) => {
@@ -28,7 +24,6 @@ export const pageQuery = graphql`
                     frontmatter {
                         title
                     }
-                    fileAbsolutePath
                     html
                 }
             }
