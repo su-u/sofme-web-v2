@@ -1,11 +1,10 @@
-import React from 'react';
+import React from "react";
 import { BlockMenu } from "../components/Index/BlockMenu";
 import { PageLayout } from "../layouts/PageLayout";
 import { News } from "../components/Index/News";
 import { About } from "../components/Index/About";
 
 const Index: React.FC<any> = () => {
-
   return (
     <>
       <PageLayout>
@@ -14,7 +13,7 @@ const Index: React.FC<any> = () => {
         <About />
       </PageLayout>
     </>
-  )
+  );
   // return (
   //   <>
   //     <section className="probootstrap-section">

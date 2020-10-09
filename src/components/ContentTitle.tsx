@@ -1,14 +1,12 @@
-import React from 'react';
+import React from "react";
 import styled from "styled-components";
 
 interface IProps {
   text: string;
 }
 
-export const ContentTitle: React.FC<IProps> = ({text}) => {
-  return (
-    <H3>{text}</H3>
-  )
+export const ContentTitle: React.FC<IProps> = ({ text }) => {
+  return <H3>{text}</H3>;
 };
 
 const H3 = styled.h3`

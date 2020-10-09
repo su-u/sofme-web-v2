@@ -52,7 +52,7 @@
     "clean": "rm -rf public && rm -rf .cache",
     "dev": "NODE_ENV=development rm -rf ./.cache && yarn && gatsby develop -H 0.0.0.0",
     "develop": "gatsby develop -H 0.0.0.0 -p 4000",
-    "format": "prettier --write src/**/*.{ts,tsx} gatsby-node/**/*.{ts,tsx}",
+    "format": "prettier --write src/**/*.{ts,tsx}",
     "start": "yarn develop"
   }
 }
